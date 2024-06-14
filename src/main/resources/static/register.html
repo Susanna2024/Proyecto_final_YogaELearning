@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Agregar enlace a la hoja de estilo de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Enlazar tu archivo CSS personalizado -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Contenedor del logotipo -->
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <!-- Logo del sitio -->
+                <img src="images/logo.jpeg" alt="SaraBonaliYoga Logo" class="logo">
+            </a>
+        </div>
+        <!-- Menú de navegación -->
+        <nav>
+            <!-- Lista de enlaces del menú -->
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="yogaon.html">Yoga en línea</a></li>
+                <li><a href="abono.html">Abonos</a></li>
+                <li><a href="sobre.html">Sobre Mí</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            
+            <!-- Iconos del menú -->
+            <div class="menu-icons">
+                <!-- Barra de búsqueda -->
+                <div class="search-bar">
+                    <!-- Icono de inicio de sesión -->
+                    <a href="login.html" class="login-button">
+                        <span class="icon">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        Iniciar sesión
+                    </a>
+                    <div class="spacer"></div> <!-- Aggiunto spazio -->
+                    <input type="text" placeholder="Buscar" class="search-input">
+                    <button class="search-button">&#x1F50D;</button>
+                </div>
+    
+                <!-- Ícono del menú para dispositivos móviles -->
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Registro</h2>
+                        <form id="registerForm" action="/usuarios/register" method="post">
+                            <div class="form-group">
+                                <label for="correo">Correo</label>
+                                <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contrasena">Contraseña</label>
+                                <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="abonoTipo">Tipo de Abono</label>
+                                <select class="form-control" id="abonoTipo" name="abonoTipo" required>
+                                    <option value="base">Base - 10€</option>
+                                    <option value="premium">Premium - 20€</option>
+                                </select>
+                            </div>
+                            <!-- Campi per il pagamento -->
+                            <div class="form-group">
+                                <label for="abonoCarta">Número de la Tarjeta</label>
+                                <input type="text" class="form-control" id="abonoCarta" name="abonoCarta" placeholder="Número de Tarjeta" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="abonoCvv">CVV</label>
+                                <input type="text" class="form-control" id="abonoCvv" name="abonoCvv" placeholder="CVV" required>
+                            </div>
+                            <!-- Nome e cognome (non obbligatori) -->
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Adquiere tu abono y regístrate</button>
+                        </form>
+                        <div class="text-center mt-3">
+                            <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pie de página -->
+    <footer class="mt-5 text-center">
+        <!-- Información del pie de página -->
+        <p>&copy; 2024 SaraBonaliYoga</p>
+        <p>Contacto: info@sarabonaliyoga.com</p>
+        <p>Instagram: @sarabonaliyoga</p>
+    </footer>
+
+    <!-- Agregar los scripts JavaScript necesarios -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    
+    
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/register.js"></script>
+    
+</body>
+</html>
+
+   
+
+

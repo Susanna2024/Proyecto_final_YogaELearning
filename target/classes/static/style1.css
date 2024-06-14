@@ -1,0 +1,440 @@
+/* Media query para dispositivos con un ancho máximo de 576px (smartphone en orientación vertical) */
+@media only screen and (max-width: 576px) {
+    /* Oculta el menú principal */
+    .nav-links {
+        display: none;
+    }
+
+    /* Muestra el botón del menú y sus íconos */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Estilo para el icono del menú */
+    .menu-icons {
+        margin-left: auto;
+    }
+
+    /* Estilo para las barras del botón del menú */
+    .menu-toggle .bar {
+        background-color: #2F4F4F;
+    }
+
+    /* Estilo para el menú cuando está activo */
+    .nav-active {
+        display: block;
+    }
+
+    /* Estilo para los enlaces en el menú */
+    .nav-links a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        color: #2F4F4F;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Estilo para el botón de inicio de sesión */
+    .login-button {
+        margin-right: auto;
+    }
+}
+    /* Reducir el ancho del campo de búsqueda */
+    .search-input {
+        width: 70%;
+    }
+
+    /* Reducir el tamaño del botón de búsqueda */
+    .search-button {
+        padding: 8px; /* Ajustar el padding del botón */
+        font-size: 16px; /* Ajustar el tamaño del texto del botón */
+    }
+
+    .login-button {
+        display: block; /* Convertirlo en un elemento de bloque */
+        margin-top: 20px; /* Añadir margen superior */
+        margin-right: auto; /* Centrar horizontalmente */
+        margin-left: auto; /* Centrar horizontalmente */
+    }
+
+/* Media query para dispositivos con un ancho máximo de 768px (tablet en orientación vertical) */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+        align-items: flex-start; /* Alinear los elementos al principio */
+    }
+
+    .nav-links li {
+        margin-bottom: 10px; /* Agregar un margen inferior entre los elementos */
+    }
+}
+
+/* Estilos para el menú desplegable */
+.menu-toggle {
+    display: none; /* Ocultar por defecto en pantallas más grandes */
+}
+
+/* Estilos para los iconos del menú desplegable */
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #2F4F4F; /* Color de las barras */
+    margin: 5px auto; /* Espaciado entre las barras */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Cambio de color de las barras al pasar el mouse */
+.menu-toggle:hover .bar {
+    background-color: #1F6A01; /* Cambio de color al verde */
+}
+
+/* Estilos para el menú desplegable activado */
+.nav-active {
+    display: block; /* Mostrar lista de enlaces */
+}
+
+
+/* Estilos para el encabezado */
+header {
+    background-color: #FFFFFF; /* Color de fondo blanco */
+    padding: 10px 20px; /* Añade un relleno vertical de 10px y un relleno horizontal de 20px */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex; /* Muestra elementos en línea */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Contenedor del logotipo */
+.logo-container {
+    text-align: center; /* Centra horizontalmente el logotipo */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Muestra elementos en línea */
+    gap: 20px; /* Añade un espacio entre los elementos */
+}
+
+.nav-links a {
+    text-decoration: none; /* Quita la subrayado de los enlaces */
+    color: #2F4F4F; /* Color de texto */
+    font-weight: bold; /* Fuente en negrita */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Subraya al pasar el mouse */
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+    display: flex; /* Muestra elementos en línea */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.search-input {
+    padding: 5px; /* Añade un relleno de 5px */
+    border: 1px solid #ccc; /* Añade un borde de 1px sólido */
+    border-radius: 5px; /* Añade esquinas redondeadas */
+    margin-right: 10px; /* Añade un margen derecho */
+}
+
+/* Estilos para el botón de búsqueda */
+.search-button {
+    color: #1F6A01; /* Cambia el color del texto a verde */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: color 0.3s; /* Agrega una animación de transición para el color de texto */
+}
+
+.search-button:hover {
+    color: #2F4F4F; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Estilos para el botón de inicio de sesión */
+.login-button {
+    color: #1F6A01; /* Cambia el color del texto a verde */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #1F6A01; /* Borde verde */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 8px 16px; /* Agrega espacio alrededor del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: none; /* Rimuove la transizione */
+    margin-right: 20px; /* Aggiunge margine a destra per separare l'icona di accesso */
+}
+
+.login-button:hover {
+    background-color: #1F6A01; /* Cambia el color de fondo al pasar el mouse */
+    color: #FFFFFF; /* Cambia el color del texto al pasar el mouse */
+}
+
+
+
+
+/* Estilos para los videos */
+
+/* Container del video principal */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Limita la larghezza massima del video principale */
+    margin: 0 auto; /* Centra il video orizzontalmente */
+    padding-top: 56.25%; /* Proporzione 16:9 per un video responsivo */
+    overflow: hidden; /* Nasconde eventuali contenuti che superano il container */
+}
+
+/* Estilos para el video principal */
+#videoPlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Estilos para las miniaturas de video */
+.gallery-item {
+    position: relative; /* Posizione relativa per consentire sovrapposizioni */
+    overflow: hidden; /* Nasconde eventuali contenuti che superano il container */
+}
+
+.gallery-item .fixed-ratio {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* Proporzione 4:3 */
+}
+
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px; /* Angoli arrotondati */
+    cursor: pointer; /* Cambia il cursore al passaggio */
+}
+
+/* Estilos para el icono de reproducción */
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+}
+
+/* Efecto de escala al pasar el mouse sobre las miniaturas */
+.gallery-item:hover img {
+    transform: scale(1.05); /* Ingrandisce leggermente l'immagine */
+    transition: transform 0.3s ease; /* Aggiunge una transizione fluida */
+}
+
+/* Estilos para el pie de página */
+footer {
+    width: 100%;
+    background-color: #2F4F4F; /* Color de fondo */
+    color: #FFFFFF; /* Color de texto */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Añade un relleno */
+}
+
+footer p {
+    margin: 5px 0; /* Añade márgenes */
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    width: 100%;
+    background-color: #2F4F4F; /* Color de fondo */
+    color: #FFFFFF; /* Color de texto */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Añade un relleno */
+}
+
+footer p {
+    margin: 5px 0; /* Añade márgenes */
+}
+
+
+/* Estilos para faq */
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+/* Estilos para la sección de FAQ */
+.accordion .card {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.accordion .card-header {
+    background-color: #ffffff;
+    border: none;
+}
+
+.accordion .card-header button {
+    color: #2F4F4F;
+    font-size: 18px;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.accordion .card-header button:hover {
+    cursor: pointer;
+}
+
+.accordion .card-header .faq-icon {
+    float: left;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Stile per l'icona nel card-header espanso */
+.accordion .card-header[aria-expanded="true"] .faq-icon {
+    transform: rotate(180deg); /* Aggiungi la proprietà 'transform' con un valore */
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form {
+    margin-top: 50px; /* Correggi la sintassi rimuovendo lo spazio tra '50' e 'px' */
+    padding-bottom: 50px; /* Agrega espacio al final del formulario */
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #1F6A01; /* Color de texto más oscuro */
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #1F6A01;
+}
+
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px; /* Ajusta la altura del área de texto */
+}
+
+.contact-form button[type="submit"] {
+    background-color: #1F6A01;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #3b6e68; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+/* video protected */
+
+.video-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+.video-description {
+    font-size: 0.9em;
+    color: #666;
+}
+.fixed-ratio {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.fixed-ratio img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.fixed-ratio:hover img {
+    transform: scale(1.05);
+}
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;}
+
+
+
+/* Stile para modal en modulo  */
+
+
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    z-index: 1000;
+    width: 300px;
+    text-align: center;
+}
+
+.notification.success {
+    background-color: #28a745;
+}
+
+.notification.error {
+    background-color: #dc3545;
+}
+
+
+
+

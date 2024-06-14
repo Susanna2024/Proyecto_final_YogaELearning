@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaraBonaliYoga</title>
+    <!-- Enlace a la hoja de estilo de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header>
+        <!-- Contenedor del logotipo -->
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <!-- Logo del sitio -->
+                <img src="images/logo.jpeg" alt="SaraBonaliYoga Logo" class="logo">
+            </a>
+        </div>
+        <!-- Menú de navegación -->
+        <nav>
+      <!-- Lista de enlaces del menú -->
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="yogaon.html">Yoga en línea</a></li>
+        <li><a href="abono.html">Abonos</a></li>
+        <li><a href="sobre.html">Sobre Mí</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+    </ul>
+
+            <!-- Iconos del menú -->
+            <div class="menu-icons">
+                <!-- Barra de búsqueda -->
+                <div class="search-bar">
+                    <!-- Icono de inicio de sesión -->
+                    <a href="login.html" class="login-button">
+                        <span class="icon">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        Iniciar sesión
+                    </a>
+                    <div class="spacer"></div> <!-- Aggiunto espacio -->
+                    <input type="text" placeholder="Buscar" class="search-input">
+                    <button class="search-button">&#x1F50D;</button>
+                </div>
+
+                <!-- Ícono del menú para dispositivos móviles -->
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5 mb-5">
+
+        <div class="video-container mb-5">
+            <video id="videoPlayer" autoplay controls>
+                <source id="videoSource" src="video_Sara/video_sara_yoga.mp4" type="video/mp4">
+                Your browser doesn't support video.
+            </video>
+        </div>
+
+        <!-- Sezione Courses -->
+        <div class="spacer"></div>
+        <h2>Courses</h2>
+
+        <!-- Galleria di anteprime dei video -->
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="gallery-item" data-video-src="video1.mp4">
+                    <div class="fixed-ratio">
+                        <img src="images/anteprima_video.jpeg" alt="Anteprima video 1">
+                        <div class="play-icon">&#9658;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item" data-video-src="video1.mp4">
+                    <div class="fixed-ratio">
+                        <img src="images/anteprima_video2.jpg" alt="Anteprima video 2">
+                        <div class="play-icon">&#9658;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gallery-item" data-video-src="video1.mp4">
+                    <div class="fixed-ratio">
+                        <img src="images/anteprimavideo_sara.jpg" alt="Anteprima video 3">
+                        <div class="play-icon">&#9658;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4">
+        <!-- Información del pie de página -->
+        <p>&copy; 2024 SaraBonaliYoga</p>
+        <p>Contacto: info@sarabonaliyoga.com</p>
+        <p>Instagram: @sarabonaliyoga</p>
+    </footer>
+
+<!-- Modal de login -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container mt-4">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h2 class="card-title mb-4">¡Bienvenido!</h2>
+                                    <p>Por favor, inicia sesión o regístrate para continuar.</p>
+                                    <div class="mt-4">
+                                        <a href="login.html" class="btn btn-primary btn-block">Iniciar Sesión</a>
+                                        <a href="register.html" class="btn btn-outline-primary btn-block mt-3">Registrarse</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
