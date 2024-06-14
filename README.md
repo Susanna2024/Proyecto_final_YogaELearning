@@ -1,6 +1,6 @@
 # Proyecto_final_YogaELearning
 
-Este proyecto constituye el backend de una aplicación para la gestión de usuarios, desarrollado con Spring Boot y Spring Security.
+Este proyecto constituye el backend y frontend de una aplicación para la gestión de usuarios, desarrollado con Spring Boot y Spring Security.
 
 Instrucciones Preliminares para el Despliegue
 Clonar el Repositorio
